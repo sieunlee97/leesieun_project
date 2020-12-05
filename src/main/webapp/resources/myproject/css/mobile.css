@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/*폰트 지정, 영문과 한글 글꼴 다르게.*/
+body {
+font-family: Georgia, "Malgun Gothic", serif;
+height:100%; /*nav메뉴 높이 가득 채우기 위해서*/
+}
+section{
+margin-top:100px; /*header영역과 section영역이 겹치는 것 방지*/
+}
+
+/*헤더 영역 시작*/
+.header {
+height:100px; /*헤더영역 폭 100px*/
+position:relative;
+padding:25px 5%; /*헤더영역 좌우 10% 여백*/
+}
+.header .logo {
+float:left;
+}
+.header .logo a{
+text-indent:-9999%; /*기존 로고 글씨 안보이게 하기 위함*/
+font-size:30px;
+font-family: Georgia, "Malgun Gothic", serif;
+/*로고 이미지 설정*/
+display:block;
+height:80px; 
+background:url(/resources/myproject/img/tag.png) no-repeat;
+background-size:90%;
+background-position: 0px center;/* 배경위치는 center(가로) center(세로)*/
+
+}
+.header .toggle-btn{
+float:right;
+margin-top:30px;
+}
+span{
+display:block;
+background:black;
+width:30px;
+height:5px;
+margin-bottom:5px;
+}
+/*헤더 영역 끝*/
+
+/*본문 영역 시작*/
+#nav { 
+display:none;
+position:absolute;
+top:110px;
+right:0px;
+background:#aaa;
+opacity:0.9;
+z-index:21;
+height:100%; /*nav메뉴 높이 화면 가득 채우기*/
+width:300px; /*nav메뉴 너비 */
+} 
+#nav li { 
+border-bottom:1px solid #999;
+border-left:1px solid #999;
+} 
+#nav li a { 
+display:block;
+padding:30px;
+font-size:20px;
+}
+#nav li:first-child{
+border-top:1px solid #999;
+}
+/*본문 슬라이드 영역 시작*/
+section #carouselExampleCaptions{
+display:block;
+text-align:center; /*슬라이드 이미지 가운데 정렬*/
+}
+
+.carousel-item img{ /*슬라이드 사진 크기 조정*/
+width:auto;
+height: 400px;
+}
+
+.carousel-item h5{
+font-size:35px;
+font-family: Georgia, "Malgun Gothic", serif;
+ /*슬라이드 안에 설명 타이틀에 그림자 효과 주기*/
+text-shadow: 2px 2px 2px gray; /*offset-x, offset-y, 흐림의 정도(클수록 옅어짐) 그림자색*/
+}
+/*본문 슬라이드 영역 시작*/
+/*본문영역 끝*/
+/* 푸터 영역 시작 */
+.footer {
+padding-top:30px; /*원래 margin-top이었는데 작동하지 않아서 padding으로 바꿈*/
+/* background-color: #a0cede 푸터 배경색 지정*/
+}
+.footer p {
+margin:21px 0px;
+color:#0064A2;
+text-align:center; /*문장 내용을 가운데 정렬*/
+}
+/* 푸터 영역 끝 */
