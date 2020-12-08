@@ -1,14 +1,16 @@
 @charset "UTF-8";
-
-/*폰트 지정, 영문과 한글 글꼴 다르게.*/
-body {
+html, body {
+width:100%; 
+height:100%;
+font-family: Georgia, "Malgun Gothic", serif; /*폰트 지정, 영문과 한글 글꼴 다르게.*/
+}
+section {
+margin-top:80px; /*header영역과 section영역이 겹치는 것 방지*/
 font-family: Georgia, "Malgun Gothic", serif;
-height:100%; /*nav메뉴 높이 가득 채우기 위해서*/
 }
-section{
-margin-top:100px; /*header영역과 section영역이 겹치는 것 방지*/
+h1, h2{
+font-family: Georgia, "Malgun Gothic", serif;
 }
-
 /*헤더 영역 시작*/
 .header {
 height:100px; /*헤더영역 폭 100px*/
@@ -32,7 +34,8 @@ background-position: 0px center;/* 배경위치는 center(가로) center(세로)
 }
 .header .toggle-btn{
 float:right;
-margin-top:30px;
+margin-top:20px;
+cursor:pointer;
 }
 span{
 display:block;
@@ -44,28 +47,34 @@ margin-bottom:5px;
 /*헤더 영역 끝*/
 
 /*본문 영역 시작*/
-#nav { 
+.side-bar .close-btn { /*사이드 메뉴 닫기 버튼*/
+position: absolute;
+top: 0;
+left:20px;
+font-size: 36px;
+color:white;
+cursor:pointer;
+}
+.side-bar { 
 display:none;
-position:absolute;
-top:110px;
-right:0px;
-background:#aaa;
-opacity:0.9;
-z-index:21;
-height:100%; /*nav메뉴 높이 화면 가득 채우기*/
+heigt;/*nav메뉴 높이 화면 가득 채우기*/
 width:300px; /*nav메뉴 너비 */
+position:fixed;
+top:0px;
+right:0px;
+height:100%;
+background:black;
+z-index:21;
 } 
-#nav li { 
-border-bottom:1px solid #999;
-border-left:1px solid #999;
-} 
-#nav li a { 
+.side-bar #nav li {
+margin-top:30px;
+}
+.side-bar #nav li a { 
 display:block;
 padding:30px;
 font-size:20px;
-}
-#nav li:first-child{
-border-top:1px solid #999;
+color:white;
+text-align:center;
 }
 /*본문 슬라이드 영역 시작*/
 section #carouselExampleCaptions{
@@ -97,3 +106,37 @@ color:#0064A2;
 text-align:center; /*문장 내용을 가운데 정렬*/
 }
 /* 푸터 영역 끝 */
+
+/*shop 본문 영역 시작*/
+.shop-section .section-title { 
+text-align:center; 
+font-size:42px;
+margin-bottom:20px;
+margin-top:-20px;
+}
+.shop-section h2{
+text-align:center;
+font-size:25px;
+text-shadow: 2px 2px 2px gray; 
+margin-top:40px;
+}
+.shop-section .container {
+width:80%;
+margin:0 auto;/*현재 영역을 수평 가운데 정렬시 margin:0 auto*/
+}
+.shop-section .container li {margin-top:30px;}
+.container img{
+width:100%;
+height:auto;
+margin-bottom:15px;
+}
+.review-info h3{
+font-family: Georgia, "Malgun Gothic", serif;
+font-size:20px;
+}
+.review-info p{
+font-family: Georgia, "Malgun Gothic", serif;
+font-size:18px;
+}
+.shop-section hr {display:block; height:1px; background:#888;}
+/*shop 본문 영역 끝*/
