@@ -1,11 +1,19 @@
 /* 자바스크립트 시작 */
-/*우->좌 슬라이드 메뉴 시작*/
+/*우->좌 슬라이드메뉴 햄버거버튼  영역 시작*/
 $(document).ready(function(){
 	$(".toggle-btn").click(function(){
-		$("#nav").animate({width:'toggle'}, 500);
+		$(".side-bar").animate({width:'toggle'}, 500);
 	})
 });
-/*우->좌 슬라이드 메뉴 끝*/
+/*우->좌 슬라이드 메뉴  햄버거버튼 영역 끝*/
+
+/*우->좌 사이드메뉴 닫기버튼 영역 시작*/
+$(document).ready(function(){
+	$(".close-btn").click(function(){
+		$(".side-bar").animate({width:'toggle'}, 500);
+	})
+});
+/*우->좌 사이드메뉴 닫기버튼 영역 끝*/
 
 /*이미지 슬라이드 시작*/
 $(document).ready(function(){
