@@ -1,15 +1,17 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Serif+KR&display=swap');
+
 html, body {
 width:100%; 
 height:100%;
-font-family: Georgia, "Malgun Gothic", serif; /*폰트 지정, 영문과 한글 글꼴 다르게.*/
+background:#eee !important;
 }
 section {
 margin-top:80px; /*header영역과 section영역이 겹치는 것 방지*/
-font-family: Georgia, "Malgun Gothic", serif;
+font-family:Georgia, 'Black Han Sans', sans-serif;
 }
 h1, h2{
-font-family: Georgia, "Malgun Gothic", serif;
+font-family:Georgia, 'Black Han Sans', sans-serif;
 }
 /*헤더 영역 시작*/
 .header {
@@ -64,6 +66,7 @@ top:0px;
 right:0px;
 height:100%;
 background:black;
+opacity:0.9;
 z-index:21;
 } 
 .side-bar #nav li {
@@ -108,7 +111,7 @@ text-align:center; /*문장 내용을 가운데 정렬*/
 /* 푸터 영역 끝 */
 
 /*shop 본문 영역 시작*/
-.shop-section .section-title { 
+.section-title { 
 text-align:center; 
 font-size:42px;
 margin-bottom:20px;
