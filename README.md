@@ -29,5 +29,5 @@
 <img width="300" src="https://user-images.githubusercontent.com/63999784/102886599-be199f00-4498-11eb-8886-3d4fa5c1beb3.png">
 </div>
 
-##### [ ] info.html 
+##### info.html 
 ##### mypage.html
