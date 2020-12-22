@@ -20,5 +20,5 @@ Screenshots
 #### sale.html
 <div>
 <img width="300" align="left" src="https://user-images.githubusercontent.com/63999784/102886201-0a181400-4498-11eb-8589-04baf3ceeb23.png">
-<img width="300" src="https://user-images.githubusercontent.com/63999784/102886169-fa98cb00-4497-11eb-8d84-8d8e87a9bf14.png">
+<img width="300" src="https://user-images.githubusercontent.com/63999784/102886599-be199f00-4498-11eb-8886-3d4fa5c1beb3.png">
 </div>
