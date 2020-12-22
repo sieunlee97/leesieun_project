@@ -4,7 +4,7 @@ Screenshots
 #### index.html
 <div>
 <img width="300" align="left" src="https://user-images.githubusercontent.com/63999784/101507156-98c96300-39b9-11eb-9b41-6f1d648ab7cd.png"> 
-<img width="300" src="https://user-images.githubusercontent.com/63999784/101507171-9cf58080-39b9-11eb-97ee-74b9fbc3d6db.png">
+<img width="300" src="https://user-images.githubusercontent.com/63999784/102886806-27011700-4499-11eb-8c23-b6f9dfcd9bb2.png">
 </div>
 
 -----------------------
