@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Stylish&display=swap');
 
 html, body {
 width:100%; 
@@ -29,7 +30,7 @@ font-family: Georgia, "Malgun Gothic", serif;
 /*로고 이미지 설정*/
 display:block;
 height:80px; 
-background:url(/resources/myproject/img/tag.png) no-repeat;
+background:url(/resources/sample/img/tag.png) no-repeat;
 background-size:90%;
 background-position: 0px center;/* 배경위치는 center(가로) center(세로)*/
 
@@ -67,7 +68,7 @@ right:0px;
 height:100%;
 background:black;
 opacity:0.9;
-z-index:21;
+z-index:30;
 } 
 .side-bar #nav li {
 margin-top:30px;
@@ -79,6 +80,7 @@ font-size:20px;
 color:white;
 text-align:center;
 }
+/*------------index.html---------------*/
 /*본문 슬라이드 영역 시작*/
 section #carouselExampleCaptions{
 display:block;
@@ -110,6 +112,7 @@ text-align:center; /*문장 내용을 가운데 정렬*/
 }
 /* 푸터 영역 끝 */
 
+/*------------shop.html---------------*/
 /*shop 본문 영역 시작*/
 .section-title { 
 text-align:center; 
@@ -133,13 +136,101 @@ width:100%;
 height:auto;
 margin-bottom:15px;
 }
-.review-info h3{
+.clothes-info h3{
 font-family: Georgia, "Malgun Gothic", serif;
 font-size:20px;
 }
-.review-info p{
+.clothes-info p{
 font-family: Georgia, "Malgun Gothic", serif;
-font-size:18px;
+font-size:20px;
 }
 .shop-section hr {display:block; height:1px; background:#888;}
 /*shop 본문 영역 끝*/
+
+/*------------sale.html---------------*/
+.sale-section {
+text-align:center;
+}
+/*할인이벤트 영역 시작*/
+.sale-section .discount { 
+width:80%;
+margin:50px auto;/*현재 영역을 수평 가운데 정렬시 margin:0 auto*/
+}
+.discount li{
+	margin-bottom:30px;
+}
+.discount li img {
+position:relative;
+width:100%;
+heigth:auto;
+}
+.discount li a { /*이부분이 실제 a링크 영역*/
+ /*a태그는 자리를 차지하지 않는 영역, block을 이용해서 자리를 차지하는 영역으로 변경*/
+display:block;
+width:100%;
+height:100%;
+position:relative; /*a태그에서 위치를 상대위치로 지정*/
+}
+
+/*마우스를 풀오버했을 때 나오는 배경색상, before가상요소 영역*/
+.discount li a::before {
+display:block;
+width:100%;
+height:100%; 
+position:absolute;/*absolute 위치는 위 a태그에서 지정한 relative 위치에 한정해서 절대위치로 지정*/
+top:0px;
+left:0px;
+background:#fff;
+content:"";
+opacity:0; /*투명도 0%로 지정*/
+transition:all 0.3s;
+}
+.discount li a:hover::before {
+opacity:0.7;
+z-index:21;
+
+}
+.discount .info {
+display:block;
+position:absolute;
+left:10px;
+color:#000;
+text-align:left;
+opacity:0;
+/*화면전환옵션 transform 모양변화에 대한 화면전환옵션, width, height 등등 all... */
+transition:all 0.3s;
+}
+.discount li a:hover .info {
+opacity:1;
+margin:0px 20px;
+transform:translateY(20px); /*모양이 변화할 때 Y세로축으로 20px 이동한다.*/
+z-index:24;
+}
+
+/*할인 이벤트 제목 설정 시작*/
+.discount .black-friday .info h2{
+font-size:35px;
+text-shadow: 2px 2px 2px gray; 
+}
+.discount .xmas h2{
+font-size:35px;
+text-shadow: 2px 2px 2px gray; 
+color:red;
+}
+.discount .gold h2{
+font-size:35px;
+font-weight:bold;
+text-shadow: 2px 2px 2px gray; 
+color:#ffd700;
+}
+/*할인 이벤트 제목 설정 끝*/
+
+.discount .info p {font-size:20px;}/*할인이벤트 기간 글자 크기 설정*/
+
+/*2020어워즈 설명  크기 설정*/
+.discount .gold .explain p { 
+font-family: 'Noto Serif KR', serif;
+font-size:20px;
+font-weight:bold;
+}
+/*할인이벤트 영역 끝*/
