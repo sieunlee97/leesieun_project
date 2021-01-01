@@ -14,6 +14,7 @@ font-family:Georgia, 'Black Han Sans', sans-serif;
 h1, h2{
 font-family:Georgia, 'Black Han Sans', sans-serif;
 }
+
 /*헤더 영역 시작*/
 .header {
 height:100px; /*헤더영역 폭 100px*/
@@ -59,7 +60,7 @@ color:white;
 cursor:pointer;
 }
 .side-bar { 
-display:none;
+display:none; /*마우스로 클릭했을 때 보이도록 하고, default는 안보이도록*/
 heigt;/*nav메뉴 높이 화면 가득 채우기*/
 width:300px; /*nav메뉴 너비 */
 position:fixed;
@@ -80,6 +81,19 @@ font-size:20px;
 color:white;
 text-align:center;
 }
+/* 푸터 영역 시작 */
+.footer {
+clear:both; /*section에 의해 생긴 float속성 사라짐 */
+padding-top:30px; /*원래 margin-top이었는데 작동하지 않아서 padding으로 바꿈*/
+/* background-color: #a0cede 푸터 배경색 지정*/
+}
+.footer p {
+margin:21px 0px;
+color:#0064A2;
+text-align:center; /*문장 내용을 가운데 정렬*/
+}
+/* 푸터 영역 끝 */
+
 /*------------index.html---------------*/
 /*본문 슬라이드 영역 시작*/
 section #carouselExampleCaptions{
@@ -100,17 +114,7 @@ text-shadow: 2px 2px 2px gray; /*offset-x, offset-y, 흐림의 정도(클수록 
 }
 /*본문 슬라이드 영역 시작*/
 /*본문영역 끝*/
-/* 푸터 영역 시작 */
-.footer {
-padding-top:30px; /*원래 margin-top이었는데 작동하지 않아서 padding으로 바꿈*/
-/* background-color: #a0cede 푸터 배경색 지정*/
-}
-.footer p {
-margin:21px 0px;
-color:#0064A2;
-text-align:center; /*문장 내용을 가운데 정렬*/
-}
-/* 푸터 영역 끝 */
+
 
 /*------------shop.html---------------*/
 /*shop 본문 영역 시작*/
@@ -234,3 +238,4 @@ font-size:20px;
 font-weight:bold;
 }
 /*할인이벤트 영역 끝*/
+

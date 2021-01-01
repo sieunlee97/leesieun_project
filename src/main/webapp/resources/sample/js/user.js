@@ -3,7 +3,7 @@
 $(document).ready(function(){
 	$(".toggle-btn").click(function(){
 		$(".side-bar").animate({width:'toggle'}, 500);
-	})
+	});
 });
 /*우->좌 슬라이드 메뉴  햄버거버튼 영역 끝*/
 
@@ -11,7 +11,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$(".close-btn").click(function(){
 		$(".side-bar").animate({width:'toggle'}, 500);
-	})
+	});
 });
 /*우->좌 사이드메뉴 닫기버튼 영역 끝*/
 
