@@ -1,4 +1,11 @@
 /* 자바스크립트 시작 */
+/* outer 세부 카테고리 영역 시작 */
+$(document).ready(function(){
+	$(".outer-section-title").click(function(){
+		$(".category").stop().slideToggle("fast");
+	});
+});
+/* outer 세부 카테고리 영역 끝 */ 
 /*우->좌 슬라이드메뉴 햄버거버튼  영역 시작*/
 $(document).ready(function(){
 	$(".toggle-btn").click(function(){

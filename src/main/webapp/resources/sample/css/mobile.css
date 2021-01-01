@@ -239,3 +239,67 @@ font-weight:bold;
 }
 /*할인이벤트 영역 끝*/
 
+/*------------outer.html---------------*/
+/* outer 타이틀 */
+.outer-section-title {
+text-align:center;
+font-size: 42px;
+margin-bottom: 20px;
+margin-top: -20px;
+}
+/* shop의 세부 카테코리 시작 */
+.outer-section .category {
+display:none;
+position:absolute;
+top:150px;
+left:0;
+width:100%;
+background:gray;
+text-align:center;
+font-size:15px;
+}
+.outer-section .category li{
+float:left;
+width:33.333%;
+margin-bottom:5px;
+margin-top:5px;
+}
+/*shop의 세부 카테고리 끝*/
+/*outer의 세부 카테고리 시작*/
+.type-category li{
+float:left;
+width:20%;
+}
+.type-category li a {
+display:block;
+padding:10px;
+text-align:center;
+font-size:15px;
+margin-bottom:20px;
+}
+/*outer의 세부 카테고리 끝*/
+/*본문 영역 디자인 시작*/
+.outer-section .container {
+width:90%;
+margin:0 auto;
+}
+.outer-section .container a{
+display:block;
+float:left;
+width:50%;
+height:auto;
+padding:2%;
+}
+/*본문 영역 디자인 끝*/
+/*outer 옷 이름과 가격 설정 시작*/
+.container .clothes-info {
+text-align:center;
+}
+.container .clothes-info h3{
+font-size:18px;
+}
+.container .clothes-info p{
+font-size:15px;
+}
+/*outer의 옷 이름과 가격 설정 끝*/
+
