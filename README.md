@@ -20,6 +20,17 @@
 <img width="300" src="https://user-images.githubusercontent.com/63999784/101509320-fd85bd00-39bb-11eb-9743-ca7f5051bbd0.png">
 </div>
 
+##### outer.html :heavy_check_mark:
+
+- [X] 슬라이드 메뉴 토글 기능 자바 스크립트
+- [X] float:clear 
+- > CSS에서 section에 의해 생긴 float 속성 사라지게 하는 스타일 
+
+<div>
+<img width="300" align="left" src="https://user-images.githubusercontent.com/63999784/103437295-36d2e500-4c69-11eb-9339-5c67f41f88ab.png"> 
+<img width="300" src="https://user-images.githubusercontent.com/63999784/103437306-4e11d280-4c69-11eb-8c70-fad0655bead6.png">
+</div>
+
 ##### sale.html :heavy_check_mark:
 
 - [X] 마우스 오버 효과 (hover()) 
